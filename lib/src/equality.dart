@@ -419,7 +419,7 @@ final class MultiEquality<E> implements Equality<E> {
 ///
 /// A list is only equal to another list, likewise for sets and maps. All other
 /// iterables are compared as iterables only.
-final class DeepCollectionEquality implements Equality {
+class DeepCollectionEquality implements Equality {
   final Equality _base;
   final bool _unordered;
   const DeepCollectionEquality([Equality base = const DefaultEquality<Never>()])
